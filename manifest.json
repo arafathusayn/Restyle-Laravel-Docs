@@ -1,0 +1,39 @@
+{
+  "manifest_version": 2,
+  "name": "Restyle Laravel Docs",
+  "short_name": "restyle-laravel-docs",
+  "version": "1.0.0",
+
+  "author": "Arafat Husayn",
+
+  "description": "An opinionated style for Laravel Docs",
+
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Restyle Laravel Docs"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://laravel.com/docs/*",
+        "https://www.laravel.com/docs/*"
+      ],
+      "js": ["content.js"],
+      "css": ["content.css"],
+			"run_at": "document_idle"
+    }
+  ],
+
+  "permissions": [
+    "https://laravel.com/docs/*",
+    "https://www.laravel.com/docs/*"
+  ]
+
+}

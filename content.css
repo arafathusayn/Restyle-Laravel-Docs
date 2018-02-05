@@ -1,0 +1,42 @@
+div.docs-wrapper.container > article > h1 {
+  display: none;
+}
+div.docs-wrapper.container > article > blockquote {
+  display: none;
+}
+body > div > div {
+  -webkit-transform: none;
+  transform: none;
+}
+@media only screen and (min-width: 1250px) {
+  div.docs-wrapper.container > article > ul {
+    position: fixed;
+    top: 140px;
+    right: 10px;
+    border: none;
+    max-width: 200px;
+  }
+}
+div.docs-wrapper.container > section {
+  position: fixed;
+  width: auto;
+  padding: 0px;
+  border: none;
+}
+div.docs-wrapper.container > section > ul > li > h2 {
+  padding: 0.05px;
+  border: none;
+}
+@media only screen and (min-width: 1250px) {
+  div.docs-wrapper.container > section > ul > li > ul {
+    position: fixed;
+    left: 300px;
+    margin: 0;
+    border-left: 1px solid lightgray;
+    transform: translateY(-30px);
+    background-color: white;
+  }
+}
+div.docs-wrapper.container > section > ul > li > h2.is-active {
+  font-weight: bold;
+}
